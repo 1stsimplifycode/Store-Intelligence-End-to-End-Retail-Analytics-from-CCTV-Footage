@@ -1,0 +1,94 @@
+{
+  "store_id": "ST1008",
+  "store_name": "Purplle Store 1",
+  "open_hours": { "open": "11:00", "close": "22:00" },
+  "clip_date": "2026-04-10",
+  "cameras": [
+    {
+      "camera_id": "CAM_ENTRY_01",
+      "source_file": "CAM 3 - entry.mp4",
+      "type": "entry",
+      "description": "Entry/exit threshold — glass door, floor mat visible",
+      "entry_line_y_ratio": 0.65
+    },
+    {
+      "camera_id": "CAM_FLOOR_01",
+      "source_file": "CAM 1 - zone.mp4",
+      "type": "floor",
+      "description": "Left wall shelves — FarmStay, The Face Shop, Good Vibes, DermaCo, Minimalist. Center summer promo display."
+    },
+    {
+      "camera_id": "CAM_FLOOR_02",
+      "source_file": "CAM 2 - zone.mp4",
+      "type": "floor",
+      "description": "Right wall — ALPS, L'Oreal, 6Mars, Swiss Beauty, Lakme, Faces Canada, Maybelline. Vanity mirror / accessories table."
+    },
+    {
+      "camera_id": "CAM_BILLING_01",
+      "source_file": "CAM 5 - billing.mp4",
+      "type": "billing",
+      "description": "Billing counter with POS laptop, back shelves visible"
+    }
+  ],
+  "zones": [
+    {
+      "zone_id": "PURPLLE_ST1008_Z_ENTRY",
+      "zone_name": "Entry",
+      "zone_type": "ENTRY",
+      "is_revenue_zone": "No",
+      "camera_id": "CAM_ENTRY_01",
+      "polygon": [[0.0, 0.4], [1.0, 0.4], [1.0, 1.0], [0.0, 1.0]]
+    },
+    {
+      "zone_id": "PURPLLE_ST1008_Z01",
+      "zone_name": "Left Wall — Skincare",
+      "zone_type": "SHELF",
+      "sku_zone": "SKINCARE",
+      "is_revenue_zone": "Yes",
+      "camera_id": "CAM_FLOOR_01",
+      "brands": ["FarmStay", "The Face Shop", "Good Vibes", "DermaCo", "Minimalist", "COSRX", "klairs", "Round Lab"],
+      "polygon": [[0.0, 0.0], [0.55, 0.0], [0.55, 0.85], [0.0, 0.85]]
+    },
+    {
+      "zone_id": "PURPLLE_ST1008_Z02",
+      "zone_name": "Center Display — Promotions",
+      "zone_type": "DISPLAY",
+      "sku_zone": "PROMOTIONS",
+      "is_revenue_zone": "Yes",
+      "camera_id": "CAM_FLOOR_01",
+      "description": "Summer essentials promo island, Sunscreen focus",
+      "polygon": [[0.3, 0.55], [0.7, 0.55], [0.7, 1.0], [0.3, 1.0]]
+    },
+    {
+      "zone_id": "PURPLLE_ST1008_Z03",
+      "zone_name": "Right Wall — Makeup",
+      "zone_type": "SHELF",
+      "sku_zone": "MAKEUP",
+      "is_revenue_zone": "Yes",
+      "camera_id": "CAM_FLOOR_02",
+      "brands": ["Swiss Beauty", "Lakme", "Faces Canada", "Maybelline", "6Mars", "L'Oreal"],
+      "polygon": [[0.35, 0.0], [1.0, 0.0], [1.0, 0.9], [0.35, 0.9]]
+    },
+    {
+      "zone_id": "PURPLLE_ST1008_Z04",
+      "zone_name": "Accessories & Vanity",
+      "zone_type": "DISPLAY",
+      "sku_zone": "ACCESSORIES",
+      "is_revenue_zone": "Yes",
+      "camera_id": "CAM_FLOOR_02",
+      "brands": ["ALPS", "Accessories"],
+      "polygon": [[0.0, 0.0], [0.35, 0.0], [0.35, 0.75], [0.0, 0.75]]
+    },
+    {
+      "zone_id": "PURPLLE_ST1008_Z_BILLING_01",
+      "zone_name": "Billing Counter Queue",
+      "zone_type": "BILLING",
+      "sku_zone": null,
+      "is_revenue_zone": "Yes",
+      "camera_id": "CAM_BILLING_01",
+      "polygon": [[0.0, 0.0], [1.0, 0.0], [1.0, 1.0], [0.0, 1.0]]
+    }
+  ],
+  "staff_uniform_colour": "black",
+  "notes": "Staff wear all-black uniforms. Faces are blurred in footage. Timestamp embedded in frame (top-right). Date confirmed: 10/04/2026."
+}
